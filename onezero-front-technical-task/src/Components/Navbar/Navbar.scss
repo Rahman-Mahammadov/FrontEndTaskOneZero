@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-button {
+    background-color: #f3f3f3;
+    color: #444;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: fit-content;
+
+    &.active {
+      background-color: #000;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
